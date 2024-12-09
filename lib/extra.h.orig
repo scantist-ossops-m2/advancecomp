@@ -69,14 +69,6 @@ typedef signed int int32; /**< Signed 32 bit integer. */
 typedef unsigned long long int uint64; /**< Unsigned 64 bit integer. */
 typedef signed long long int int64; /**< Signed 64 bit integer. */
 
-/**
- * Check for unsigned overflow in multiplication
- */
-static inline int UINT_MUL_OVERFLOW(unsigned a, unsigned b)
-{
-	return b != 0 && a >= UINT_MAX / b;
-}
-
 /** \name Align
  * Alignment.
  */
